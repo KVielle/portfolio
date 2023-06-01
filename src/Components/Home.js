@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import {HiArrowNarrowRight} from 'react-icons/hi'
+import {Link} from 'react-scroll' 
 
 const Home = () => {
     return (
@@ -15,7 +16,9 @@ const Home = () => {
                 {/* {button stuff} */}
                 <Button>
                     <button className="group text-white border-2 px-6 py-3 my-2 flex items-center hover:bg-[#b3fcf8] duration-300 hover:border-[#b3fcf8] hover:text-gray-600">
-                        <span className="group-hover:rotate-90 duration-300"><HiArrowNarrowRight className="ml-3"/></span></button>
+                        <Link to="projects" smooth={true} duration={500}>
+                        View Projects
+                        </Link><span className="group-hover:rotate-90 duration-300"><HiArrowNarrowRight className="ml-3"/></span></button>
                 </Button>
             </Content>
         </Box>
