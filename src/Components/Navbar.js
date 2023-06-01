@@ -15,10 +15,9 @@ const Navbar = () => {
 
     return (
         <Box>
-            <Img>
-                <img src = {Face} alt = "Face"/>
-                
-            </Img>
+            <Name>
+                K . V
+            </Name>
             {/* {menu} */}
             <Menu className='hidden md:flex'>
                 <ul className='hidden md:flex'>
@@ -84,11 +83,10 @@ const Box = styled.div`
     background-color: #0a192f;
     color: lightgrey;
 `
-const Img = styled.div`
-    img{
-        width: 50px;
-        border-radius: 50%;
-    }
+const Name = styled.div`
+    font-weight: bold;
+    font-size: 2rem;
+    color: #34ebdb;
 `
 const Menu = styled.div`
     
