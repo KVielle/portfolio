@@ -4,7 +4,7 @@ import styled from "styled-components";
 const Contact = () => {
     return(
         <Box name='contact'>
-            <Form>
+            <Form method="POST" action="https://getform.io/f/18625524-21c9-4e0f-858f-070ccfadda50">
                 <Container>
                     <P>Contact</P>
                     <P2> // Submit the form below or feel free to send me an email - Kevielleuse@Gmail.com </P2>
@@ -52,6 +52,7 @@ const P2 = styled.p`
 `
 const Input = styled.input`
     background-color: #b3fcf8;
+    padding: 0.5rem;
 `
 const Input2 = styled.input`
     background-color: #b3fcf8;
@@ -61,6 +62,7 @@ const Input2 = styled.input`
 `
 const TextArea = styled.textarea`
     background-color: #b3fcf8;
+    padding: 0.5rem;
 `
 const Button = styled.button`
     color: #d1d5db;

@@ -14,7 +14,8 @@ const Home = () => {
                 <p className="text-[#8892b0] py-4 max-w-[700px]">A bunch of really interesting things and speech about how competent i am, it goes on for a while and really sells me well to potential employers</p>
                 {/* {button stuff} */}
                 <Button>
-                    <button className="group text-white border-2 px-6 py-3 my-2 flex items-center hover:bg-[#b3fcf8] duration-300 hover:border-[#b3fcf8] hover:text-gray-600">View Projects<span className="group-hover:rotate-90 duration-300"><HiArrowNarrowRight className="ml-3"/></span></button>
+                    <button className="group text-white border-2 px-6 py-3 my-2 flex items-center hover:bg-[#b3fcf8] duration-300 hover:border-[#b3fcf8] hover:text-gray-600">
+                        <span className="group-hover:rotate-90 duration-300"><HiArrowNarrowRight className="ml-3"/></span></button>
                 </Button>
             </Content>
         </Box>

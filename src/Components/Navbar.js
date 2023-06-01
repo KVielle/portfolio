@@ -5,7 +5,7 @@ import { HiOutlineMail } from 'react-icons/hi'
 import {BsFillPersonLinesFill} from 'react-icons/bs';
 import Face from '../Assets/myface.jpg'
 import { useState } from 'react'
-
+import {Link} from 'react-scroll'
 
 const Navbar = () => {
 
@@ -21,10 +21,26 @@ const Navbar = () => {
             {/* {menu} */}
             <Menu className='hidden md:flex'>
                 <ul className='hidden md:flex'>
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>Projects</li>
-                    <li>Contact</li>
+                    <li>
+                        <Link to="home" smooth={true} duration={500}>
+                        Home
+                        </Link>
+                    </li>
+                    <li>
+                        <Link to="about" smooth={true} duration={500}>
+                        About
+                        </Link>
+                    </li>
+                    <li>
+                        <Link to="projects" smooth={true} duration={500}>
+                        Projects
+                        </Link>
+                    </li>
+                    <li>
+                        <Link to="contact" smooth={true} duration={500}>
+                        Contact
+                        </Link>
+                    </li>
                 </ul>
             </Menu>
             {/* {hamburger} */}
@@ -36,10 +52,26 @@ const Navbar = () => {
             {/* {mobile menu } */}
             <MobileMenu className={!nav ? 'hidden' : 'flex'}>
             <ul>
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>Projects</li>
-                    <li>Contact</li>
+                    <li>
+                        <Link onClick={handleClick} to="home" smooth={true} duration={500}>
+                        Home
+                        </Link>
+                    </li>
+                    <li>
+                        <Link onClick={handleClick} to="about" smooth={true} duration={500}>
+                        About
+                        </Link>
+                    </li>
+                    <li>
+                        <Link onClick={handleClick} to="projects" smooth={true} duration={500}>
+                        Projects
+                        </Link>
+                    </li>
+                    <li>
+                        <Link onClick={handleClick} to="contact" smooth={true} duration={500}>
+                        Contact
+                        </Link>
+                    </li>
             </ul>
             </MobileMenu>
 
@@ -119,7 +151,7 @@ const MobileMenu = styled.div`
     li{
         padding: 1.5rem 0 1.5rem 0;
         font-size: 2em;
-        
+        cursor: pointer;
     }
 `
 const Social = styled.div`
