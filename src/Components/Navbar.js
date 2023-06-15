@@ -79,12 +79,12 @@ const Navbar = () => {
             <Social className='hidden lg:flex'>
         <ul>
             <li className='bg-blue-600'> 
-                <a href="/">
+                <a href="https://www.linkedin.com/in/keven-vielleuse-b1436527a/">
                     Linkedin <FaLinkedin size={30} />
                 </a>
             </li>
             <li className='bg-gray-700'> 
-                <a href="/">
+                <a href="https://github.com/KVielle">
                     GitHub <FaGithub size={30} />
                 </a>
             </li>

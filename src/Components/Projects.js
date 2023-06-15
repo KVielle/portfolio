@@ -16,7 +16,7 @@ const Projects = () => {
                 {/* {container} */}
                 <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4 ">
                     {/* {grid items} */}
-                    <div style= {{backgroundImage: `url(${Terraria})`}}className="shadow-lg shadow-[#040c16] group container rounded-md flec justify-center mx-auto content-div">
+                    <div style= {{backgroundImage: `url(${Terraria})`}}className=" group container rounded-md flec justify-center mx-auto content-div">
                         
                         {/* {hover effects} */}
                         <div className="opacity-0 group-hover:opacity-100 duration-300">
@@ -33,14 +33,14 @@ const Projects = () => {
                             </div>
                         </div>
                     </div>
-                    <div style= {{backgroundImage: `url(${cookie})`}}className="shadow-lg shadow-[#040c16] group container rounded-md flec justify-center mx-auto content-div">
+                    <div style= {{backgroundImage: `url(${cookie})`}}className="group container rounded-md flec justify-center mx-auto content-div">
 
                         {/* {hover effects} */}
                         <div className="opacity-0 group-hover:opacity-100 duration-300">
                             <span className="text-2xl font-bold text-white tracking-wider">
                                 React based game
                             </span>
-                            <div className="pt-8 text-center">
+                            <div className="pt-8 text-center ">
                                 <a href="/">
                                     <Button>Demo</Button>
                                 </a>
@@ -58,6 +58,7 @@ const Projects = () => {
 
 
 const Button = styled.button`
+    display: flex;
     border-radius: 0.5rem;
     padding: 0.75rem 1rem 0.75rem 1rem;
     margin: 0.5rem;
@@ -70,6 +71,7 @@ const Button = styled.button`
     }
 `
 const Button2 = styled.button`
+    display: flex;
     text-align: center;
     border-radius: 0.5rem;
     padding: 0.75rem 1rem 0.75rem 1rem;

@@ -6,6 +6,7 @@ import JAVAS from '../Assets/javascript.png'
 import TailWind from '../Assets/tailwind.png'
 import Node from '../Assets/node.png'
 import GitHub from '../Assets/github.png'
+import Mongo from '../Assets/mongo.png'
 
 const Skills = () => {
 
@@ -47,6 +48,10 @@ const Skills = () => {
                     <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
                         <img className= "w-20 mx-auto" src={Node} alt="HTML Icon" />
                         <p>Node.js</p>
+                    </div>
+                    <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
+                        <img className= "w-20 mx-auto" src={Mongo} alt="HTML Icon" />
+                        <p>Mongo Db</p>
                     </div>
                 </div>
             </div>

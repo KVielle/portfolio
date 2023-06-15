@@ -18,10 +18,5 @@
     height: 350px;
 }
 .content-div:hover {
-    transition-duration: 300ms;
-    background-image: linear-gradient(
-        to right,
-        rgba(2,0,36,1),
-        rgba(0,206,218,1)
-    )!important;
+    
 }
