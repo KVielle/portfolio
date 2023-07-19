@@ -88,11 +88,11 @@ const Navbar = () => {
                     GitHub <FaGithub size={30} />
                 </a>
             </li>
-            <li className='bg-[#6fc2b0]'> 
+            {/* <li className='bg-[#6fc2b0]'> 
                 <a href="/">
                     Email <HiOutlineMail size={30} />
                 </a>
-            </li>
+            </li> */}
             <li className='bg-orange-600'> 
                 <a href="/">
                     Resume <BsFillPersonLinesFill size={30} />

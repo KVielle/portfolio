@@ -41,7 +41,7 @@ const Projects = () => {
                                 React based game
                             </span>
                             <div className="pt-8 text-center ">
-                                <a href="/">
+                                <a href="https://cookie-clicker-jade.vercel.app/">
                                     <Button>Demo</Button>
                                 </a>
                                 <a href="">
