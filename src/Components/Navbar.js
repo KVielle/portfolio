@@ -6,6 +6,7 @@ import {BsFillPersonLinesFill} from 'react-icons/bs';
 import Face from '../Assets/myface.jpg'
 import { useState } from 'react'
 import {Link} from 'react-scroll'
+import Resume from '../Assets/Resume.pdf'
 
 const Navbar = () => {
 
@@ -79,7 +80,7 @@ const Navbar = () => {
             <Social className='hidden lg:flex'>
         <ul>
             <li className='bg-blue-600'> 
-                <a href="https://www.linkedin.com/in/keven-vielleuse-b1436527a/">
+                <a href="https://www.linkedin.com/in/keven-vielleuse/">
                     Linkedin <FaLinkedin size={30} />
                 </a>
             </li>
@@ -94,7 +95,7 @@ const Navbar = () => {
                 </a>
             </li> */}
             <li className='bg-orange-600'> 
-                <a href="/">
+                <a href={Resume}>
                     Resume <BsFillPersonLinesFill size={30} />
                 </a>
             </li>

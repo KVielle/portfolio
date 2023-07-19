@@ -1,6 +1,8 @@
 import React from "react";
 import Terraria from '../Assets/terraria.png'
 import cookie from '../Assets/cookie.png'
+import Shuffle from '../Assets/Shuffle.png'
+import Result from '../Assets/ShuffleResult.png'
 import styled from 'styled-components'
 
 const Projects = () => {
@@ -16,10 +18,25 @@ const Projects = () => {
                 {/* {container} */}
                 <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4 ">
                     {/* {grid items} */}
-                    <div style= {{backgroundImage: `url(${Terraria})`}}className=" group container rounded-md flec justify-center mx-auto content-div">
-                        
+                    <div style= {{backgroundImage: `url(${Shuffle})`}}className="group container rounded-md flex justify-center mx-auto content-div">
                         {/* {hover effects} */}
                         <div className="opacity-0 group-hover:opacity-100 duration-300">
+                            <Span className="text-2xl font-bold text-white tracking-wider pb-5">
+                                React based App
+                            </Span>
+                            <div className="pt-8 text-center ">
+                                <a href="https://shuffle-liart.vercel.app/">
+                                    <Button>Demo</Button>
+                                </a>
+                                <a href="https://github.com/KVielle/final-project">
+                                    <Button2>Code</Button2>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div style= {{backgroundImage: `url(${Terraria})`}}className=" group container rounded-md flec justify-center mx-auto content-div">
+                        {/* {hover effects} */}
+                        <div className="opacity-0 group-hover:opacity-100 duration-300 mb-4">
                             <span className="text-2xl font-bold text-white tracking-wider">
                                 HTML/CSS based game
                             </span>
@@ -34,7 +51,6 @@ const Projects = () => {
                         </div>
                     </div>
                     <div style= {{backgroundImage: `url(${cookie})`}}className="group container rounded-md flec justify-center mx-auto content-div">
-
                         {/* {hover effects} */}
                         <div className="opacity-0 group-hover:opacity-100 duration-300">
                             <span className="text-2xl font-bold text-white tracking-wider">
@@ -83,5 +99,8 @@ const Button2 = styled.button`
         font-size: 1.125rem;
         line-height: 1.75rem;
     }
+`
+const Span = styled.div`
+    margin-top: -1.5em;
 `
 export default Projects;
