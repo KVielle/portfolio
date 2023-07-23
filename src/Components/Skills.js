@@ -7,6 +7,7 @@ import TailWind from '../Assets/tailwind.png'
 import Node from '../Assets/node.png'
 import GitHub from '../Assets/github.png'
 import Mongo from '../Assets/mongo.png'
+import Express from '../Assets/Express.png'
 
 const Skills = () => {
 
@@ -38,6 +39,10 @@ const Skills = () => {
                         <p>JavaScript</p>
                     </div>
                     <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
+                        <img className= "w-20 mx-auto" src={Express} alt="HTML Icon" />
+                        <p>Express.Js</p>
+                    </div>
+                    <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
                         <img className= "w-20 mx-auto" src={GitHub} alt="HTML Icon" />
                         <p>GitHub</p>
                     </div>
@@ -47,7 +52,7 @@ const Skills = () => {
                     </div>
                     <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
                         <img className= "w-20 mx-auto" src={Node} alt="HTML Icon" />
-                        <p>Node.js</p>
+                        <p>Node.Js</p>
                     </div>
                     <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
                         <img className= "w-20 mx-auto" src={Mongo} alt="HTML Icon" />

@@ -89,19 +89,20 @@ const Navbar = () => {
                     GitHub <FaGithub size={30} />
                 </a>
             </li>
-            {/* <li className='bg-[#6fc2b0]'> 
-                <a href="/">
-                    Email <HiOutlineMail size={30} />
-                </a>
-            </li> */}
+            
             <li className='bg-orange-600'> 
                 <a href={Resume}>
                     Resume <BsFillPersonLinesFill size={30} />
                 </a>
             </li>
+            <li className='bg-[#6fc2b0]'> 
+                <Link to="contact" smooth={true} duration={500} className='cursor-pointer'>
+                    Email <HiOutlineMail size={30} />
+                </Link>
+            </li>
         </ul>
-            </Social>
-        </Box>
+        </Social>
+    </Box>
     )
 }
 
@@ -174,6 +175,7 @@ const Social = styled.div`
         width: 160px;
         height: 60px;
         margin-left: -100px;
+        padding-left: 1em;
         transition-duration: 0.3s;
         &:hover{
             margin-left: 0px;

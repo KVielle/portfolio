@@ -18,7 +18,7 @@ const Projects = () => {
                 {/* {container} */}
                 <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4 ">
                     {/* {grid items} */}
-                    <div style= {{backgroundImage: `url(${Shuffle})`}}className="group container rounded-md flex justify-center mx-auto content-div">
+                    <div style= {{backgroundImage: `url(${Shuffle})`}}className="group container rounded-md flex justify-center mx-auto w-100 content-div">
                         {/* {hover effects} */}
                         <div className="opacity-0 group-hover:opacity-100 duration-300">
                             <Span className="text-2xl font-bold text-white tracking-wider pb-5">
@@ -44,7 +44,7 @@ const Projects = () => {
                                 <a href="/">
                                     <Button>Demo</Button>
                                 </a>
-                                <a href="">
+                                <a href="https://github.com/KVielle/project-js-nyan-cat">
                                     <Button2>Code</Button2>
                                 </a>
                             </div>
@@ -60,7 +60,7 @@ const Projects = () => {
                                 <a href="https://cookie-clicker-jade.vercel.app/">
                                     <Button>Demo</Button>
                                 </a>
-                                <a href="">
+                                <a href="https://github.com/KVielle/react-effects">
                                     <Button2>Code</Button2>
                                 </a>
                             </div>
