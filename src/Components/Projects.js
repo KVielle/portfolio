@@ -41,7 +41,7 @@ const Projects = () => {
                                 HTML/CSS based game
                             </span>
                             <div className="pt-8 text-center">
-                                <a href="/">
+                                <a href="https://project-js-nyan-cat-ten.vercel.app/">
                                     <Button>Demo</Button>
                                 </a>
                                 <a href="https://github.com/KVielle/project-js-nyan-cat">
