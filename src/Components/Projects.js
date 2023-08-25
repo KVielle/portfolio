@@ -4,6 +4,7 @@ import cookie from '../Assets/cookie.png'
 import Shuffle from '../Assets/Shuffle.png'
 import Result from '../Assets/ShuffleResult.png'
 import styled from 'styled-components'
+import chat from '../Assets/ChatHome.png'
 
 const Projects = () => {
 
@@ -29,6 +30,22 @@ const Projects = () => {
                                     <Button>Demo</Button>
                                 </a>
                                 <a href="https://github.com/KVielle/final-project">
+                                    <Button2>Code</Button2>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div style= {{backgroundImage: `url(${chat})`}}className="group container rounded-md flec justify-center mx-auto content-div">
+                        {/* {hover effects} */}
+                        <div className="opacity-0 group-hover:opacity-100 duration-300">
+                            <span className="text-2xl font-bold text-white tracking-wider">
+                                React/Socket.io live chat app 
+                            </span>
+                            <div className="pt-8 text-center ">
+                                {/* <a href="https://chat-project-one.vercel.app/">
+                                    <Button>Demo</Button>
+                                </a> */}
+                                <a href="https://github.com/KVielle/chat-project">
                                     <Button2>Code</Button2>
                                 </a>
                             </div>
