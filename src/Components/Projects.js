@@ -17,15 +17,22 @@ const Projects = () => {
                 </div>
 
                 {/* {container} */}
-                <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4 ">
+                <div className="grid sm:grid-cols-2 md:grid-cols-2 gap-4 ">
                     {/* {grid items} */}
-                    <div style= {{backgroundImage: `url(${Shuffle})`}}className="group container rounded-md flex justify-center mx-auto w-100 content-div">
+                    <div style= {{
+                            backgroundImage: `url(${Shuffle}), url(${Result})`,
+                            backgroundSize: '50% auto, 50% auto',
+                            backgroundRepeat: 'no-repeat',
+                            backgroundPosition: 'left top, right top',
+                            backgroundColor: 'black'
+                        }}
+                            className="group container rounded-md justify-center mx-auto mb-10 w-100 content-div">
                         {/* {hover effects} */}
-                        <div className="opacity-0 group-hover:opacity-100 duration-300">
+                        <div>
                             <Span className="text-2xl font-bold text-white tracking-wider pb-5">
                                 React based App
                             </Span>
-                            <div className="pt-8 text-center ">
+                            <div className="pt-8 text-center">
                                 <a href="https://shuffle-liart.vercel.app/">
                                     <Button>Demo</Button>
                                 </a>
@@ -35,12 +42,12 @@ const Projects = () => {
                             </div>
                         </div>
                     </div>
-                    <div style= {{backgroundImage: `url(${chat})`}}className="group container rounded-md flec justify-center mx-auto content-div">
+                    <div style= {{backgroundImage: `url(${chat})`, backgroundColor: 'black'}}className="group container rounded-md justify-center mx-auto content-div">
                         {/* {hover effects} */}
-                        <div className="opacity-0 group-hover:opacity-100 duration-300">
-                            <span className="text-2xl font-bold text-white tracking-wider">
+                        <div>
+                            <Span className="text-2xl font-bold text-white tracking-wider pb-5">
                                 React/Socket.io live chat app 
-                            </span>
+                            </Span>
                             <div className="pt-8 text-center ">
                                 {/* <a href="https://chat-project-one.vercel.app/">
                                     <Button>Demo</Button>
@@ -51,12 +58,12 @@ const Projects = () => {
                             </div>
                         </div>
                     </div>
-                    <div style= {{backgroundImage: `url(${Terraria})`}}className=" group container rounded-md flec justify-center mx-auto content-div">
+                    <div style= {{backgroundImage: `url(${Terraria})`, backgroundColor: 'black'}}className=" group container rounded-md justify-center mx-auto content-div">
                         {/* {hover effects} */}
-                        <div className="opacity-0 group-hover:opacity-100 duration-300 mb-4">
-                            <span className="text-2xl font-bold text-white tracking-wider">
+                        <div>
+                            <Span className="text-2xl font-bold text-white tracking-wider">
                                 HTML/CSS based game
-                            </span>
+                            </Span>
                             <div className="pt-8 text-center">
                                 <a href="https://project-js-nyan-cat-ten.vercel.app/">
                                     <Button>Demo</Button>
@@ -67,12 +74,12 @@ const Projects = () => {
                             </div>
                         </div>
                     </div>
-                    <div style= {{backgroundImage: `url(${cookie})`}}className="group container rounded-md flec justify-center mx-auto content-div">
+                    <div style= {{backgroundImage: `url(${cookie})`, backgroundColor: 'black'}}className="group container rounded-md justify-center mx-auto content-div">
                         {/* {hover effects} */}
-                        <div className="opacity-0 group-hover:opacity-100 duration-300">
-                            <span className="text-2xl font-bold text-white tracking-wider">
+                        <div>
+                            <Span className="text-2xl font-bold text-white tracking-wider">
                                 React based game
-                            </span>
+                            </Span>
                             <div className="pt-8 text-center ">
                                 <a href="https://cookie-clicker-jade.vercel.app/">
                                     <Button>Demo</Button>
@@ -119,5 +126,6 @@ const Button2 = styled.button`
 `
 const Span = styled.div`
     margin-top: -1.5em;
+    
 `
 export default Projects;
